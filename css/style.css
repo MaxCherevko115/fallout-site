@@ -15,22 +15,91 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
+:root{
+    --index: calc(1vh + 1vw);
+    --height: 1vh;
+}
+
 @font-face {
     font-family: fallout_font;
-    src: url(../fonts/fallout.ttf);
+    src: url(../fonts/Gothic\ 821\ Condensed\ BT.ttf);
 }
+
+body {
+    background-color: #292828;
+}
+
 .header-views {
     position: relative;
 }
 
-.layers {
-    display: flex;
-    height: 100vh;
-    align-items: center;
+.header-views::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 25%;
+    bottom: calc(var(--height) * -13);
+    background-image: url(../images/ground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
 .layer {
     height: 100%;
     width: 100%;
     position: absolute;
     background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+.interval {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.main-views {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-views::before {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 25%;
+    top: calc(var(--height) * -13);
+    background-image: url(../images/ground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.layers__background-view {
+    transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
+}
+
+.layers__middle-view {
+    transform: translate3d(0, calc(var(--scrollTop) / 2.1), 0);
+}
+
+.layers__front-view {
+    transform: translate3d(0, calc(var(--scrollTop) / 7.5), 0);
 }
