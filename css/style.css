@@ -79,10 +79,6 @@ body {
     }
 }
 
-.hide {
-    opacity: 0;
-}
-
 /* First page */
 
 .logo {
@@ -130,7 +126,7 @@ body {
 }
 
 .layer {
-    height: 100%;
+    height: 110%;
     width: 100%;
     position: absolute;
     background-size: cover;
@@ -195,7 +191,7 @@ body {
 /* Speed parallax effect */
 
 .layers__background-view {
-    transform: translate3d(0, calc(var(--scrollTop) / 1.3), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
 }
 
 .layers__middle-view {

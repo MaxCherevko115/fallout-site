@@ -2,8 +2,8 @@
 const mask = document.querySelector('.mask')
 
 window.addEventListener('load', () => {
-    mask.classList.add('hide')
-    setTimeout(() => mask.remove, 300)
+    mask.style.opacity = '0'
+    setTimeout(() => mask.style.display = 'none', 300)
 })
 
 window.addEventListener('scroll', e => {
@@ -12,7 +12,7 @@ window.addEventListener('scroll', e => {
 
 SmoothScroll({
 // Scroll time 400 = 0.4 секунды
-animationTime : 800,
+animationTime : 1000,
 // Step size in pixels
 stepSize : 60,
 
@@ -23,7 +23,7 @@ stepSize : 60,
 accelerationDelta : 30,
 
 // Max acceleration
-accelerationMax : 2,
+accelerationMax : 1.5,
 
 keyboardSupport : true,
 
