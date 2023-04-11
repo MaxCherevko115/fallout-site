@@ -28,7 +28,7 @@ body {
     scrollbar-width: none;  /* Firefox */
 }
 
-:root{
+:root {
     --index: calc(1vh + 1vw);
     --height: 1vh;
     --width: 1vw;
@@ -45,7 +45,7 @@ body {
 }
 
 
-body {
+body {    
     background-color: #292828;
 }
 
@@ -133,7 +133,6 @@ body {
     background-position: center;
     will-change: transform;
 }
-
 
 .space {
     width: 100%;
