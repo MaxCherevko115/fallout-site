@@ -1,0 +1,18 @@
+.content {
+    height: 100%;
+    min-height: 30%;
+    background: url(../../../images/content/background-dungeon.png) center / cover no-repeat;
+}
+.content__container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.content__title {
+    font-family: fallout_logo_font;
+    font-size: calc(24px + 16 * (100vw / 1440));
+    text-align: center;
+    padding-bottom: 2%;
+}
+.content__text {
+    font-size: calc(14px + 10 * (100vw / 1440));
+}

@@ -4,31 +4,62 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js" defer></script>
+
+        <!-- Smoothscroll -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 
-        <link rel="icon" href="images/fallout_icon.png">
+        <!-- Styles -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Icon -->
+        <link rel="icon" href="icons/main-icon.png">
+
+        <!-- Title -->
         <title>Fallout</title>
     </head>
     <body>
-        <header class="header-views">
-            <div class="layers">
-                <h1 class="logo">Fallout</h1>
-                <div class="layer layers__background-view" style="background-image: url(images/background-view.png);"></div>
-                <div class="layer layers__middle-view" style="background-image: url(images/middle-view.png);"></div>
-                <div class="layer layers__front-view" style="background-image: url(images/front-view.png);"></div>
+
+        <div class="wrapper">
+
+            <section class="parallax">
+                <div class="parallax__body">
+                    <h1 class="parallax__logo">Fallout</h1>
+                    <div class="parallax__images images-parallax">
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__background-view"></div>
+                        </div>
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__middle-view"></div>
+                        </div>
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__front-view"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space">
+                <div class="space__body"></div>
+            </section>
+
+            <section class="content">
+                <div class="content__container">
+                    <h2 class="content__title">New age</h2>
+                    <div class="content__text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa dicta, dolorem eum neque unde nobis fugiat perspiciatis exercitationem facilis fugit consequuntur velit incidunt iusto fuga. Itaque error rem fugit autem quas quisquam. Asperiores odit eveniet minus illum. Ratione incidunt ab consectetur quasi cumque iste quos rem nulla, ullam sit modi perspiciatis dolorem vel magnam placeat in repellendus maiores architecto quaerat molestias, obcaecati aperiam cum reprehenderit? Magnam quis accusamus quo dicta porro reiciendis ratione nemo adipisci deserunt magni. Sed itaque cupiditate necessitatibus a possimus! Soluta ad porro et natus optio amet, consectetur quae magni aut labore quia laborum omnis molestiae nostrum corporis dolores, incidunt maiores debitis vero fugiat! Nisi porro exercitationem, quam dolorem ab consequatur quas illo eos in culpa dolorum.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa dicta, dolorem eum neque unde nobis fugiat perspiciatis exercitationem facilis fugit consequuntur velit incidunt iusto fuga. Itaque error rem fugit autem quas quisquam. Asperiores odit eveniet minus illum. Ratione incidunt ab consectetur quasi cumque iste quos rem nulla, ullam sit modi perspiciatis dolorem vel magnam placeat in repellendus maiores architecto quaerat molestias, obcaecati aperiam cum reprehenderit? Magnam quis accusamus quo dicta porro reiciendis ratione nemo adipisci deserunt magni. Sed itaque cupiditate necessitatibus a possimus! Soluta ad porro et natus optio amet, consectetur quae magni aut labore quia laborum omnis molestiae nostrum corporis dolores, incidunt maiores debitis vero fugiat! Nisi porro exercitationem, quam dolorem ab consequatur quas illo eos in culpa dolorum.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="loader">
+                <div class="loader__ring"></div>
             </div>
-        </header>
-        <div class="space" style="background-image: url(images/ground-middle.png);"></div>
-        <main class="main-views" style="background-image: url(images/background-dungeon.png);">
-            <div class="main-views__content">
-                <h2 class="main-views__header">New age</h2>
-                <p class="main-views__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa dicta, dolorem eum neque unde nobis fugiat perspiciatis exercitationem facilis fugit consequuntur velit incidunt iusto fuga. Itaque error rem fugit autem quas quisquam. Asperiores odit eveniet minus illum. Ratione incidunt ab consectetur quasi cumque iste quos rem nulla, ullam sit modi perspiciatis dolorem vel magnam placeat in repellendus maiores architecto quaerat molestias, obcaecati aperiam cum reprehenderit? Magnam quis accusamus quo dicta porro reiciendis ratione nemo adipisci deserunt magni. Sed itaque cupiditate necessitatibus a possimus! Soluta ad porro et natus optio amet, consectetur quae magni aut labore quia laborum omnis molestiae nostrum corporis dolores, incidunt maiores debitis vero fugiat! Nisi porro exercitationem, quam dolorem ab consequatur quas illo eos in culpa dolorum.</p>
-            </div>
-        </main>
-        <div class="mask">
-            <div class="loader"></div>
+
         </div>
+
+        <!-- Scripts -->
+        <script src="main.js" defer></script>
+
     </body>
 </html>

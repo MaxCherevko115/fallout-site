@@ -1,0 +1,23 @@
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    background-color: #292828;
+    font-family: fallout_font;
+    color: #b9b9b9;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+[class *= "__container"] {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}

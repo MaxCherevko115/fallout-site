@@ -1,0 +1,27 @@
+/* Reset styles */
+
+@import url(css/vendor/reset.css);
+
+/* Reset styles */
+
+@import url(css/vendor/fonts.css);
+
+/* Global styles */
+
+@import url(css/components/index.css);
+
+/* Parallax */
+
+@import url(css/components/parallax/parallax.css);
+
+/* Space */
+
+@import url(css/components/space/space.css);
+
+/* Content */
+
+@import url(css/components/content/content.css);
+
+/* Loader */
+
+@import url(css/components/loader/loader.css);

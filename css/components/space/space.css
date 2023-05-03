@@ -1,0 +1,31 @@
+.space {
+    height: 40vh;
+}
+
+.space__body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    z-index: 10;
+    top: -10%;
+    background: url(../../../images/space/ground.png) center / cover no-repeat;
+}
+
+.space__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url(../../../images/space/ground-middle.png) center / cover no-repeat;
+}
+
+.space__body::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    z-index: 10;
+    bottom: -10%;
+    background: url(../../../images/space/ground.png) center / cover no-repeat;
+} 
