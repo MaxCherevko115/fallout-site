@@ -9,7 +9,8 @@
 }
 
 .parallax__logo {
-    font-family: fallout_logo_font;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
     position: absolute;
     left: 3%;
     top: 3%;

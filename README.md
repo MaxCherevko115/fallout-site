@@ -1,4 +1,3 @@
 # fallout-site
-Simple site on the subject of fallout
 
-![](/gif/view-site.gif)
+The layout can be viewed at this [link](https://maxcherevko115.github.io/fallout-site/).

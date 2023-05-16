@@ -1,10 +1,1 @@
-
-@font-face {
-    font-family: fallout_logo_font;
-    src: url(../../fonts/gothic_821_condensed_bt.ttf);
-}
-
-@font-face {
-    font-family: fallout_font;
-    src: url(../../fonts/futura_medium_bt.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@700&display=swap');
